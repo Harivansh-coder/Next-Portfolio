@@ -136,6 +136,7 @@ export default function Navbar() {
           <a
             href={userData.socialLinks.github}
             target="_blank"
+            rel="noreferrer"
             className="text-base font-normal text-gray-600 dark:text-gray-300"
           >
             <svg
@@ -152,6 +153,7 @@ export default function Navbar() {
           <a
             href={userData.socialLinks.linkedin}
             target="_blank"
+            rel="noreferrer"
             className="text-base font-normal text-gray-600 dark:text-gray-300"
           >
             <svg
