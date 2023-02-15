@@ -1,6 +1,5 @@
 import { TextField } from "@mui/material";
 import Button from "@mui/material/Button";
-import { color } from "@mui/system";
 import React from "react";
 import userData from "../constants/data";
 
@@ -13,7 +12,7 @@ export default function Contact() {
         </h1>
       </div>
       <div className="bg-[#F1F1F1] dark:bg-gray-900 -mt-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-5 mx-52">
           <div className="md:ml-4 mt-10">
             <header className="">
               <h1 className="text-gray-50 font-semibold text-2xl">
@@ -144,61 +143,26 @@ export default function Contact() {
               </a> */}
             </div>
           </div>
-          <div className="contact-form flex flex-col justify-center">
+          <div className="contact-form flex flex-col justify-center col-span-2">
             <form className="form rounded-lg bg-white p-4 grid grid-cols-1 gap-4">
-              {/* <label htmlFor="name" className="text-sm text-gray-600 mx-5">
-                {" "}
-                Your Name
-              </label>
-              <input
-                type="text"
-                className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
-                name="name"
-              />
-              <label
-                htmlFor="email"
-                className="text-sm text-gray-600 mx-4 mt-4"
-              >
-                Email
-              </label>
-              <input
-                type="text"
-                className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
-                name="email"
-              />
-              <label
-                htmlFor="message"
-                className="text-sm text-gray-600 mx-4 mt-4"
-              >
-                Message
-              </label>
-              <textarea
-                type="text"
-                className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
-                name="message"
-              ></textarea>
-              <button
-                type="submit"
-                className="bg-blue-500 rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
-              >
-                Send Message
-              </button> */}
-
               <TextField
                 id="outlined-basic"
-                label="Outlined"
+                label="Name"
+                size="small"
                 variant="outlined"
               />
 
               <TextField
                 id="outlined-basic"
-                label="Outlined"
+                label="Email"
+                size="small"
                 variant="outlined"
               />
 
               <TextField
                 id="outlined-basic"
-                label="Outlined"
+                label="Message"
+                size="small"
                 variant="outlined"
               />
 
@@ -210,7 +174,7 @@ export default function Contact() {
                   alert("message sent");
                 }}
               >
-                Contained
+                Send
               </Button>
             </form>
           </div>
