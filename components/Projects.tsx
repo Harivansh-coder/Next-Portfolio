@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import userData from "../constants/data";
 
@@ -41,9 +42,11 @@ const ProjectCard = ({
     <a href={link} className="w-full block shadow-2xl">
       <div className="relative overflow-hidden">
         <div className="h-72 object-cover">
-          <img
+          <Image
             src={imgUrl}
             alt="portfolio"
+            width={500}
+            height={500}
             className="transform hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full"
           />
         </div>
