@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import userData from "../constants/data";
+import { SunIcon, MoonIcon } from "@heroicons/react/24/outline";
 
 export default function Navbar() {
   const router = useRouter();
@@ -167,10 +168,10 @@ export default function Navbar() {
           <button
             aria-label="Toggle Dark Mode"
             type="button"
-            className="w-10 h-10 p-3 rounded focus:outline-none"
+            className="w-12 h-12 p-3 rounded focus:outline-none"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           >
-            {mounted && (
+            {/* {mounted && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -194,7 +195,9 @@ export default function Navbar() {
                   />
                 )}
               </svg>
-            )}
+            )} */}
+
+            {theme === "dark" ? <SunIcon /> : <MoonIcon />}
           </button>
         </div>
       </div>

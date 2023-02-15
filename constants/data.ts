@@ -10,8 +10,18 @@ const userData = {
     {
       title: "Artemec",
       link: "https://artemec-quote.web.app/",
-      imgUrl: "/tmk.jpg",
+      imgUrl: "/artemec.png",
     },
+    {
+      title: "getMyExe",
+      link: "https://github.com/MyFSociety/get-my-exe",
+      imgUrl: "/get_my_exe.png",
+    },
+    {
+      title: "NextPortfolio",
+      link: "",
+      imgUrl: "/portfolio.png",
+    }
     
   ],
   about: {
