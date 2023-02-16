@@ -8,16 +8,19 @@ const userData = {
   address: "Mumbai, Maharashtra, India.",
   projects: [
     {
+      id: 1,
       title: "Artemec",
       link: "https://artemec-quote.web.app/",
       imgUrl: "/artemec.png",
     },
     {
+      id: 2,
       title: "getMyExe",
       link: "https://github.com/MyFSociety/get-my-exe",
       imgUrl: "/get_my_exe.png",
     },
     {
+      id: 3,
       title: "NextPortfolio",
       link: "",
       imgUrl: "/portfolio.png",

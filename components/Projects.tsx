@@ -13,14 +13,14 @@ export default function Projects() {
       {/* Grid starts here */}
       <div className="bg-[#F1F1F1] dark:bg-gray-900 h-full px-6 py-12 lg:flex lg:justify-center lg:items-center">
         <div className="grid lg:grid-cols-3 gap-5">
-          {userData.projects.map((proj, idx = 0) => (
-            <div className="w-full max-w-md mx-auto">
+          {userData.projects.map((proj) => (
+            <div className="w-full max-w-md mx-auto" key={proj.id}>
               <ProjectCard
                 title={proj.title}
                 link={proj.link}
                 imgUrl={proj.imgUrl}
-                number={idx + 1}
-                key={`${idx + 1}`}
+                number={proj.id}
+                key={proj.id}
               />
             </div>
           ))}

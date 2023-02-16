@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
-import getLatestRepos from "../lib/getLatestRepos";
+import React, { useState } from "react";
 import userData from "../constants/data";
 
 export default function LatestCode({ repositories }: any) {
@@ -43,8 +41,8 @@ export default function LatestCode({ repositories }: any) {
         {/* Single github Repo */}
 
         {repos &&
-          repos.map((latestRepo: any, idx: any) => (
-            <GithubRepoCard latestRepo={latestRepo} key="idx" />
+          repos.map((latestRepo: any) => (
+            <GithubRepoCard latestRepo={latestRepo} key={latestRepo.id} />
           ))}
       </div>
     </section>
