@@ -1,17 +1,12 @@
 import axios from "axios";
 
-const getLatestRepos = async (data: any) => {
-  // console.log("data", data);
+const getLatestRepos = async (username: string) => {
   try {
-    const username = data.githubUsername;
+    const res = await axios.get(
+      `https://api.github.com/users/${username}/repos?sort=created&direction=desc&per_page=6`
+    );
 
-    
-      const res = await axios.get(
-        `https://api.github.com/users/${username}/repos?sort=created&direction=desc`
-      );
-      let repos = res.data;
-      let latestSixRepos = repos.splice(0, 6);
-      return latestSixRepos;
+    return res.data;
   } catch (err) {
     console.log(err);
   }

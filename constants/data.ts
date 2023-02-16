@@ -24,11 +24,11 @@ const userData = {
       title: "NextPortfolio",
       link: "https://vercel.com/harivansh-coder/next-portfolio/BCtZxSozmSazoeNrgxU4myAGpYGC",
       imgUrl: "/portfolio.png",
-    }
-    
+    },
   ],
   about: {
-    title:"A software developer who enjoys working on backend development, cloud computing, and software development overall, and is passionate about learning new technology.",
+    title:
+      "A software developer who enjoys working on backend development, cloud computing, and software development overall, and is passionate about learning new technology.",
     description: [
       `A highly skilled individual with over 4 years of programming experience. `,
       `I have a diverse background, having worked with a range of programming languages including Python, Java, Kotlin, React, Next.js, Express, TypeScript, JavaScript, C, and Go Lang.`,
@@ -84,5 +84,7 @@ const userData = {
     github: "https://github.com/Harivansh-coder",
   },
 };
+
+export type IUserData = typeof userData;
 
 export default userData;
