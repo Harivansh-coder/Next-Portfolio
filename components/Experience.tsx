@@ -41,7 +41,7 @@ export default function Experience() {
 const ExperienceCard = ({ title, desc, year, company, companyLink }: any) => {
   return (
     <div className="relative experience-card border p-4 rounded-md shadow-xl bg-white dark:bg-gray-800 z-10 mx-4">
-      <h1 className="absolute -top-10 md:-left-10 md:-top-10 text-4xl text-gray-200 font-bold dark:text-gray-800">
+      <h1 className="absolute -top-10 md:-left-10 md:-top-10 text-4xl text-gray-500 font-bold dark:text-gray-500">
         {year}
       </h1>
       <h1 className="font-semibold text-xl">{title}</h1>

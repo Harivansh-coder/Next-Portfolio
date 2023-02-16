@@ -1,4 +1,4 @@
-import { TextField } from "@mui/material";
+import { colors, TextField } from "@mui/material";
 import Button from "@mui/material/Button";
 import React from "react";
 import userData from "../constants/data";
@@ -102,8 +102,9 @@ export default function Contact() {
               />
 
               <Button
-                className="col-span-1 col-start-2 bg-black  hover:bg-gray-500  text-white font-bold py-2 px-4 rounded"
+                className="col-span-1 col-start-2  hover:bg-gray-500  text-white font-bold py-2 px-4 rounded"
                 variant="contained"
+                style={{ backgroundColor: "#02044A" }}
                 size="medium"
                 onClick={() => {
                   alert("message sent");
