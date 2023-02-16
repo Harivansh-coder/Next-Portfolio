@@ -18,8 +18,6 @@ export default function Home({ repositories }: any) {
 }
 
 export const getServerSideProps = async () => {
-  const token = process.env.GITHUB_AUTH_TOKEN;
-
   const repositories = await getLatestRepos(userData);
 
   return {
@@ -28,3 +26,16 @@ export const getServerSideProps = async () => {
     },
   };
 };
+
+export async function getStaticProps() {
+  const repositories = await getLatestRepos(userData);
+
+  return {
+    props: {
+      repositories,
+    },
+    // Next.js will attempt to re-generate the page:
+
+    revalidate: 60 * 60 * 24, // 24 hours
+  };
+}
