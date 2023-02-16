@@ -20,9 +20,12 @@ export default function ContainerBlock({ children, ...customMeta }: any) {
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
+        <meta property="og:url" content="https://harivansht.tech" />
+        <meta lang="en" />
+
         <meta
           property="og:url"
-          content={`https://yourwebsite.com${router.asPath}`}
+          content={`https://harivansht.tech${router.asPath}`}
         />
         <link
           rel="canonical"
