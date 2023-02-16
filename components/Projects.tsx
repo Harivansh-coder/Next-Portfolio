@@ -11,16 +11,18 @@ export default function Projects() {
         </h1>
       </div>
       {/* Grid starts here */}
-      <div className="bg-[#F1F1F1] dark:bg-gray-900">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
+      <div className="bg-[#F1F1F1] dark:bg-gray-900 h-full px-6 py-12 lg:flex lg:justify-center lg:items-center">
+        <div className="grid lg:grid-cols-3 gap-5">
           {userData.projects.map((proj, idx = 0) => (
-            <ProjectCard
-              title={proj.title}
-              link={proj.link}
-              imgUrl={proj.imgUrl}
-              number={idx + 1}
-              key={`${idx + 1}`}
-            />
+            <div className="w-full max-w-md mx-auto">
+              <ProjectCard
+                title={proj.title}
+                link={proj.link}
+                imgUrl={proj.imgUrl}
+                number={idx + 1}
+                key={`${idx + 1}`}
+              />
+            </div>
           ))}
         </div>
       </div>
@@ -48,7 +50,7 @@ const ProjectCard = ({
             alt="portfolio"
             width={500}
             height={500}
-            className="transform hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full"
+            className="transform hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full "
           />
         </div>
         <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
