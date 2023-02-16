@@ -18,7 +18,7 @@ export default function Home({ repositories }: any) {
 }
 
 export async function getStaticProps() {
-  const repositories = await getLatestRepos(userData);
+  const repositories = await getLatestRepos(userData.githubUsername);
 
   return {
     props: {
