@@ -17,16 +17,6 @@ export default function Home({ repositories }: any) {
   );
 }
 
-export const getServerSideProps = async () => {
-  const repositories = await getLatestRepos(userData);
-
-  return {
-    props: {
-      repositories,
-    },
-  };
-};
-
 export async function getStaticProps() {
   const repositories = await getLatestRepos(userData);
 
