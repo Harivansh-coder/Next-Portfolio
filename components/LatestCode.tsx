@@ -7,7 +7,7 @@ export default function LatestCode({ repositories }: any) {
   return (
     <section className="bg-[#F1F1F1] -mt-40 dark:bg-gray-900 pb-40">
       <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-center pt-40 mx-10 md:my-20 lg:my-0">
+        <div className="flex flex-col md:flex-row justify-between items-center pt-48 mx-10 md:my-20 lg:my-0">
           <h1 className="text-6xl lg:text-9xl max-w-lg font-bold text-gray-500 md:my-0 md:text-gray dark:text-gray-600 text-center lg:text-left">
             Recent Code
           </h1>
@@ -16,7 +16,7 @@ export default function LatestCode({ repositories }: any) {
             href={`https://github.com/${userData.githubUsername}`}
             target="_blank"
             rel="noreferrer"
-            className="mb-20 md:mb-0 px-8 py-4 rounded-md bg-white shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700"
+            className="mb-20 .sm:mt-5 mt-5 md:mb-0 px-5 py-4 rounded-md bg-white shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
