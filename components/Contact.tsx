@@ -2,8 +2,30 @@ import { colors, TextField } from "@mui/material";
 import Button from "@mui/material/Button";
 import React from "react";
 import userData from "../constants/data";
+import { validationSchema } from "../lib/validation";
 
 export default function Contact() {
+  const [data, setData] = React.useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleSubmit = async (e: {
+    name: string;
+    email: string;
+    message: string;
+  }) => {
+    validationSchema
+      .validate(e)
+      .then((res) => {
+        alert("submitted successfully");
+      })
+      .catch((err) => {
+        alert(err.message);
+      });
+  };
+
   return (
     <section>
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800 antialiased">
@@ -62,25 +84,40 @@ export default function Contact() {
               <TextField
                 className="col-span-3"
                 id="name"
+                type={"text"}
                 label="Name"
                 size="small"
                 variant="outlined"
+                value={data.name}
+                onChange={(e) => {
+                  setData({ ...data, name: e.target.value });
+                }}
               />
 
               <TextField
                 className="col-span-3"
                 id="email"
+                type={"email"}
                 label="Email"
                 size="small"
                 variant="outlined"
+                value={data.email}
+                onChange={(e) => {
+                  setData({ ...data, email: e.target.value });
+                }}
               />
 
               <TextField
                 className="col-span-3"
                 id="message"
+                type={"text"}
                 label="Message"
                 size="small"
                 variant="outlined"
+                value={data.message}
+                onChange={(e) => {
+                  setData({ ...data, message: e.target.value });
+                }}
               />
 
               <Button
@@ -89,7 +126,7 @@ export default function Contact() {
                 style={{ backgroundColor: "#02044A" }}
                 size="medium"
                 onClick={() => {
-                  alert("message sent");
+                  handleSubmit(data);
                 }}
               >
                 Send
