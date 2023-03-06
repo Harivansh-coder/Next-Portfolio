@@ -25,6 +25,12 @@ const userData = {
       link: "https://vercel.com/harivansh-coder/next-portfolio/BCtZxSozmSazoeNrgxU4myAGpYGC",
       imgUrl: "/portfolio.png",
     },
+    {
+      id: 4,
+      title: "Image Gallery",
+      link: "https://image-gallery-lovat.vercel.app/",
+      imgUrl: "/image_gallery.png",
+    },
   ],
   about: {
     title:
