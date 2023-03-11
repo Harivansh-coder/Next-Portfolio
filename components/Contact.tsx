@@ -2,6 +2,7 @@ import { colors, TextField } from "@mui/material";
 import Button from "@mui/material/Button";
 import React from "react";
 import userData from "../constants/data";
+import contactUs from "../lib/contactUs";
 import { validationSchema } from "../lib/validation";
 
 export default function Contact() {
@@ -19,7 +20,7 @@ export default function Contact() {
     validationSchema
       .validate(e)
       .then((res) => {
-        alert("submitted successfully");
+        contactUs(e);
       })
       .catch((err) => {
         alert(err.message);
