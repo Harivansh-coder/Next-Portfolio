@@ -1,4 +1,4 @@
-import { colors, TextField } from "@mui/material";
+import { TextField } from "@mui/material";
 import Button from "@mui/material/Button";
 import React from "react";
 import userData from "../constants/data";
@@ -21,6 +21,10 @@ export default function Contact() {
       .validate(e)
       .then((res) => {
         contactUs(e);
+      })
+      .then(() => {
+        alert("Message sent successfully");
+        setData({ name: "", email: "", message: "" });
       })
       .catch((err) => {
         alert(err.message);
