@@ -31,7 +31,10 @@ export default function ContainerBlock({ children, ...customMeta }: any) {
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
 
-        <link rel="canonical" href="https://harivansht.tech" />
+        <link
+          rel="canonical"
+          href={`https://harivansht.tech${router.asPath}`}
+        />
 
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Harivansh Thakur" />
