@@ -3,6 +3,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import userData from "../constants/data";
 
 export default function ContainerBlock({ children, ...customMeta }: any) {
   const router = useRouter();
@@ -20,12 +21,12 @@ export default function ContainerBlock({ children, ...customMeta }: any) {
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        <meta property="og:url" content="https://harivansht.tech" />
+        <meta property="og:url" content={userData.websiteURL} />
         <meta lang="en" />
 
         <meta
           property="og:url"
-          content={`https://harivansht.tech${router.asPath}`}
+          content={`https://www.harivansht.tech${router.asPath}`}
         />
 
         <link rel="icon" href="/favicon.ico" />
@@ -33,7 +34,7 @@ export default function ContainerBlock({ children, ...customMeta }: any) {
 
         <link
           rel="canonical"
-          href={`https://harivansht.tech${router.asPath}`}
+          href={`https://www.harivansht.tech${router.asPath}`}
         />
 
         <meta property="og:type" content={meta.type} />

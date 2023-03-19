@@ -1,6 +1,7 @@
 const userData = {
   githubUsername: "Harivansh-coder",
   name: "Harivansh Thakur",
+  websiteURL: "https://www.harivansht.tech",
   designation: "Back-End Developer",
   avatarUrl: "/avatar.png",
   email: "harivanshthakur8@gmail.com",
