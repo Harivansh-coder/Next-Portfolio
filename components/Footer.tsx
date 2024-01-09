@@ -42,6 +42,7 @@ export default function Footer() {
             </a> */}
             <a
               href={userData.socialLinks.twitter}
+              title="My Twitter Profile Page Link"
               className="text-base font-normal text-gray-600 dark:text-gray-300"
             >
               <svg
@@ -57,6 +58,7 @@ export default function Footer() {
             </a>
             <a
               href={userData.socialLinks.linkedin}
+              title="My Linkedin Profile Page Link"
               className="text-base font-normal text-gray-600 dark:text-gray-300"
             >
               <svg

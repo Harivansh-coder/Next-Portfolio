@@ -136,6 +136,7 @@ export default function Navbar() {
           <a
             href={userData.socialLinks.github}
             target="_blank"
+            title="My Github Profile Page Link"
             rel="noreferrer"
             className="text-base font-normal text-gray-600 dark:text-gray-300"
           >
@@ -153,6 +154,7 @@ export default function Navbar() {
           <a
             href={userData.socialLinks.linkedin}
             target="_blank"
+            title="My Linkedin Profile Page Link"
             rel="noreferrer"
             className="text-base font-normal text-gray-600 dark:text-gray-300"
           >

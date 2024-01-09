@@ -24,7 +24,6 @@ export async function getStaticProps() {
     props: {
       repositories,
     },
-    // Next.js will attempt to re-generate the page:
 
     revalidate: 60 * 60 * 24, // 24 hours
   };
