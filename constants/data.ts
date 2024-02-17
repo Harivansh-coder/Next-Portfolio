@@ -1,7 +1,7 @@
 const userData = {
   githubUsername: "Harivansh-coder",
   name: "Harivansh Thakur",
-  websiteURL: "https://www.harivansht.tech",
+  websiteURL: "https://www.harivanshthakur.tech",
   designation: "Back-End Developer",
   avatarUrl: "/avatar.png",
   email: "harivanshthakur8@gmail.com",
@@ -84,7 +84,7 @@ const userData = {
     },
   ],
   resumeUrl:
-    "https://drive.google.com/file/d/11uEymRY8u_6dFuYLDoi1eWGpBQDtK5IS/view?usp=sharing",
+    "https://drive.google.com/file/d/1PzC_UrT52HXkwyt1Bdh5FYTqgGskoR48/view?usp=sharing",
   socialLinks: {
     twitter: "https://twitter.com/",
     linkedin: "https://www.linkedin.com/in/harivansh-thakur1/",

@@ -13,6 +13,7 @@ export default function ContainerBlock({ children, ...customMeta }: any) {
     description: `I've been developing software such as mobile apps, web apps, RESTAPI and lot more for more than 4 years.`,
     image: "/avatar.png",
     type: "website",
+    date: new Date().toISOString(), // time of build in ISO format
     ...customMeta,
   };
   return (
@@ -26,7 +27,7 @@ export default function ContainerBlock({ children, ...customMeta }: any) {
 
         <meta
           property="og:url"
-          content={`https://www.harivansht.tech${router.asPath}`}
+          content={`https://www.harivanshthakur.tech${router.asPath}`}
         />
 
         <link rel="icon" href="/favicon.ico" />
@@ -34,10 +35,14 @@ export default function ContainerBlock({ children, ...customMeta }: any) {
 
         <link
           rel="canonical"
-          href={`https://www.harivansht.tech${router.asPath}`}
+          href={`https://www.harivanshthakur.tech${router.asPath}`}
         />
 
         <meta property="og:type" content={meta.type} />
+        <meta property="og:locale" content="en" />
+        <meta name="title" content={meta.title} />
+        <meta name="description" content={meta.description} />
+
         <meta property="og:site_name" content="Harivansh Thakur" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
